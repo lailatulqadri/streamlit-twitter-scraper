@@ -9,7 +9,8 @@ app = Twitter()
 
 all_tweets = app.get_tweets("elonmusk")
 for tweet in all_tweets:
-  print(tweet)
+  st.write(tweet)
+  #  print(tweet)
 
 
 # Set page name and favicon
