@@ -11,9 +11,11 @@ all_tweets = app.get_tweets("elonmusk")
 listes=[]
 for tweet in all_tweets:  
   listes.append(tweet)
-  
-# df = pd.read_json(listes, orient ='records')
-st.write(listes)
+
+json_data = listes
+
+df = pd.read_json(json_data, orient ='records')
+st.write(df)
   
 
 
