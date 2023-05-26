@@ -1,7 +1,7 @@
 boto3==1.24.69
 botocore==1.27.69
-pandas
-streamlit
+pandas==1.4.3
+streamlit==1.12.2
 twint-fork
 tweety-ns
 json
