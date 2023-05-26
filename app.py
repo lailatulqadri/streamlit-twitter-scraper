@@ -12,8 +12,8 @@ listes=[]
 for tweet in all_tweets:  
   listes.append(tweet)
   
-df = pd.read_json(listes, orient ='records')
-st.write(df)
+# df = pd.read_json(listes, orient ='records')
+st.write(listes)
   
 
 
