@@ -2,7 +2,6 @@ import streamlit as st
 import twint
 import pandas as pd
 import json
-from functions import convert_df, comprehend
 import botocore
 
 
