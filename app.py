@@ -10,7 +10,7 @@ app = Twitter()
 all_tweets = app.get_tweets("elonmusk")
 
 df = pd.read_json(all_tweets)
-st.dataframe(df)
+st.dataframe(df, use_container_width=True)
 
 
 
