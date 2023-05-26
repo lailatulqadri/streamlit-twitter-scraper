@@ -8,9 +8,15 @@ from tweety.bot import Twitter
 app = Twitter()
 
 all_tweets = app.get_tweets("elonmusk")
+list=[]
 for tweet in all_tweets:
   st.write(tweet)
+  list.append(tweet)
   #  print(tweet)
+ 
+df = pd.read_json(list, orient ='records')
+st.write(df)
+  
 
 
 # Set page name and favicon
