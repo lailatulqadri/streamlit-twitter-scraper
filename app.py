@@ -8,11 +8,12 @@ from tweety.bot import Twitter
 app = Twitter()
 
 all_tweets = app.get_tweets("elonmusk")
-listes=[]
+
 for tweet in all_tweets:  
   listes.append(tweet)
-  df = pd.read_json(tweet)
-  st.dataframe(df, use_container_width=True)
+
+df = pd.read_json(all_tweets)
+st.dataframe(df)
 
 
 
