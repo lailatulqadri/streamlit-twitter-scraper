@@ -15,7 +15,8 @@ for tweet in all_tweets:
 json_data = listes
 
 df = pd.read_json(json_data, orient ='records')
-st.write(df)
+st.dataframe(df, use_container_width=True)
+
   
 
 
