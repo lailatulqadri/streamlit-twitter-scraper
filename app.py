@@ -8,14 +8,15 @@ from tweety.bot import Twitter
 app = Twitter()
 
 all_tweets = app.get_tweets("elonmusk")
-list=[]
+listes=[]
 for tweet in all_tweets:
   st.write(tweet)
   pd.read_json(tweet, orient ='records')
+  listes.append(tweet)
   st.write(df)
  
-#df = pd.read_json(list, orient ='records')
-#st.write(df)
+df = pd.read_json(listes, orient ='records')
+st.write(df)
   
 
 
