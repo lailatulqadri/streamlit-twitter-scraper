@@ -4,4 +4,3 @@ pandas==1.4.3
 streamlit==1.12.2
 twint-fork
 tweety-ns
-json
