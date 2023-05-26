@@ -9,9 +9,6 @@ app = Twitter()
 
 all_tweets = app.get_tweets("elonmusk")
 
-for tweet in all_tweets:  
-  listes.append(tweet)
-
 df = pd.read_json(all_tweets)
 st.dataframe(df)
 
