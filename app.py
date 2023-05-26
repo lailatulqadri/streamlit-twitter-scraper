@@ -4,6 +4,13 @@ import pandas as pd
 import json
 import botocore
 
+from tweety.bot import Twitter
+app = Twitter()
+
+all_tweets = app.get_tweets("elonmusk")
+for tweet in all_tweets:
+  print(tweet)
+
 
 # Set page name and favicon
 st.set_page_config(page_title='Twitter scraper',page_icon=':iphone:')
