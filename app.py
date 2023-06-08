@@ -14,7 +14,7 @@ all_tweets = app.get_tweets(search_term)
 
 for tweet in all_tweets:
   #st.write(tweet)
-  st.write(tweet[id], tweet[text], tweet[created_on])
+  st.write(tweet['id'], tweet['text'], tweet['created_on'])
 
 
 
