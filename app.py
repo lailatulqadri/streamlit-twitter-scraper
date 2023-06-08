@@ -10,7 +10,7 @@ st.subheader("""
 Let's scrape some Tweets... Hope Twitter doesn't ban me :smile:
 """)
 search_term = st.text_input('What do you want to search for?')
-all_tweets = app.search(search_term)
+all_tweets = app.get_tweets(search_term)
 
 for tweet in all_tweets:
   #st.write(tweet)
