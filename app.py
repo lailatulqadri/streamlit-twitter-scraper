@@ -7,7 +7,7 @@ import botocore
 from tweety.bot import Twitter
 app = Twitter()
 
-all_tweets = app.get_tweets("elonmusk")
+all_tweets = app.get_tweets("ukm")
 
 for tweet in all_tweets:
   st.write(tweet)
